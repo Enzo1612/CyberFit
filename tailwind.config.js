@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      lightBlue: "#E7F2F8",
-      blue: "#74BDCB",
-      orange: "#FFA384",
-      brown: "#EFE7BC",
+      gray: "#EEEEEE",
+      blue: "#00ADB5",
+      red: "#FF5722",
       white: "FFFF",
-      black: "191919",
+      black: "#303841",
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
